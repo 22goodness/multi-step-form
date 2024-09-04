@@ -25,9 +25,9 @@ steps.forEach((step) => {
   const prevBtn = step.querySelector(".prev-stp");
   if (prevBtn) {
     prevBtn.addEventListener("click", () => {
-      document.querySelector(.step-${currentStep}).style.display = "none";
+      document.querySelector(`.step-${currentStep}`).style.display = "none";
       currentStep--;
-      document.querySelector(.step-${currentStep}).style.display = "flex";
+      document.querySelector(`.step-${currentStep}`).style.display = "flex";
       circleSteps[currentCircle].classList.remove("active");
       currentCircle--;
     });
